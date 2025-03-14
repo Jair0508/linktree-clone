@@ -8,18 +8,18 @@
 }
 
 body {
-  padding-block: 16px;
+  padding-block: 46px;
   background: linear-gradient(156deg, #000000 0%, #8e1818 48%, #fa781d 100%);
 }
 
 .portrait-mode {
   height: 100dvh;
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 .landscape-mode {
   height: 100dvh;
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 .img-container {
