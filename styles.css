@@ -8,11 +8,18 @@
 }
 
 body {
-  /* height: 100dvh; */
-  background: rgb(0, 0, 0);
-  background: linear-gradient(156deg, rgba(0, 0, 0, 1) 0%, rgba(142, 24, 24, 1) 48%, rgba(250, 120, 29, 1) 100%);
   padding-block: 16px;
-  /* overflow: hidden; */
+  background: linear-gradient(156deg, #000000 0%, #8e1818 48%, #fa781d 100%);
+}
+
+.portrait-mode {
+  height: 100dvh;
+  width: 100vw;
+}
+
+.landscape-mode {
+  height: 100dvh;
+  width: 100vw;
 }
 
 .img-container {
@@ -54,6 +61,7 @@ body {
   margin-bottom: 16px;
   font-size: 3em;
   z-index: 1;
+  text-shadow: 2px 2px 6px #000000b3;
 }
 
 .links-container ul {
@@ -119,37 +127,6 @@ body {
 .dragon-ball {
   position: fixed;
 }
-
-/* #ball1 {
-  top: 325px;
-  left: 272px;
-}
-#ball2 {
-  top: 46px;
-  left: -12px;
-}
-#ball3 {
-  top: 497px;
-  left: -49px;
-  z-index: 0;
-}
-#ball4 {
-  top: -46px;
-  left: 231px;
-}
-#ball5 {
-  top: 293px;
-  left: -22px;
-  z-index: 1;
-}
-#ball6 {
-  top: 200px;
-  left: 246px;
-}
-#ball7 {
-  top: 500px;
-  left: 287px;
-} */
 
 @media only screen and (max-width: 355px)  {
 
@@ -239,8 +216,6 @@ body {
   }
 }
 
-
-/* @media only screen and (max-width: 390px) { */
 @media only screen and (min-width: 355px) and (max-width: 400px)  {
 
   .img-container {
@@ -475,6 +450,10 @@ body {
 }
 
 @media only screen and (min-width: 651px) and (max-width: 830px) {
+  .landscape-mode {
+    height: 100dvi;
+  }
+  
   #ball1 {
     top: 325px;
     left: 637px;
@@ -541,6 +520,10 @@ body {
 }
 
 @media only screen and (min-width: 901px) and (max-width: 1100px) {
+  .landscape-mode {
+    height: 100dvi;
+  }
+  
   #ball1 {
     top: 325px;
     left: 828px;
@@ -574,6 +557,12 @@ body {
 }
 
 @media only screen and (min-width: 1100px) and (max-width: 1300px) {
+  .landscape-mode {
+    height: 100dvh !important;
+    width: 100vw;
+    background: linear-gradient(156deg, #000000 0%, #1e2ea1 48%, #00ff08 100%);
+  }
+  
   #ball1 {
     top: 325px;
     left: 972px;
